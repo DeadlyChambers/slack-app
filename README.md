@@ -1,5 +1,13 @@
 # slack-app
-Trying out creating a slack app
+[![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit)](https://github.com/pre-commit/pre-commit)
+[![semantic-release: angular](https://img.shields.io/badge/semantic--release-angular-e10079?logo=semantic-release)](https://github.com/semantic-release/semantic-release)
+
+
+Example used [slack-sample](https://github.com/slack-samples/bolt-js-upgrade-app/blob/main/app.js)
+## Using Coventional Commits
+
+Before commiting ensure you understand the [contributing](CONTRIBUTING.md) guide as all commit messages must start with ['fix:', 'feat:', 'docs:', 'chore:'] along with `(scope)`, and/or `!` if you have commited, but not
+merged yet. You can edit commits by `git rebase -i`
 
 ## Vars
 

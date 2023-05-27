@@ -7,7 +7,8 @@
     "test": "testing",
     "start": "node app.js",
     "prepublish": "npm version patch && npm publish",
-    "local": "npm version patch && start"
+    "local": "npm version patch && npm run start",
+    "lint": "eslint --ext .js ."
   },
   "repository": {
     "type": "git",
@@ -27,6 +28,15 @@
   "dependencies": {
     "@ngrok/ngrok": "^0.5.1",
     "@slack/bolt": "^3.13.1",
+    "dotenv": "^16.0.3",
     "semver": "^7.5.1"
+  },
+  "devDependencies": {
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/commit-analyzer": "^9.0.2",
+    "@semantic-release/exec": "^6.0.3",
+    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/npm": "^10.0.3",
+    "@semantic-release/release-notes-generator": "^11.0.1"
   }
 }
