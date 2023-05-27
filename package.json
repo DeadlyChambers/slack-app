@@ -1,0 +1,32 @@
+{
+  "name": "slack-app",
+  "version": "1.0.0",
+  "description": "Slack app that will return scripts and help with devops stuff",
+  "main": "app.js",
+  "scripts": {
+    "test": "testing",
+    "start": "node app.js",
+    "prepublish": "npm version patch && npm publish",
+    "local" : "npm version patch && start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DeadlyChambers/slack-app.git"
+  },
+  "keywords": [
+    "bolt",
+    "slack",
+    "poc"
+  ],
+  "author": "Shane Chambers",
+  "license": "SEE LICENSE IN LICENSE",
+  "bugs": {
+    "url": "https://github.com/DeadlyChambers/slack-app/issues"
+  },
+  "homepage": "https://github.com/DeadlyChambers/slack-app#readme",
+  "dependencies": {
+    "@ngrok/ngrok": "^0.5.1",
+    "@slack/bolt": "^3.13.1",
+    "semver": "^7.5.1"
+  }
+}
