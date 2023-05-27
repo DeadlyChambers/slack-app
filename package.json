@@ -1,13 +1,13 @@
 {
   "name": "slack-app",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Slack app that will return scripts and help with devops stuff",
   "main": "app.js",
   "scripts": {
     "test": "testing",
     "start": "node app.js",
     "prepublish": "npm version patch && npm publish",
-    "local" : "npm version patch && start"
+    "local": "npm version patch && start"
   },
   "repository": {
     "type": "git",
