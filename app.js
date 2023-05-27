@@ -1,4 +1,4 @@
-const { App, LogLevel } = require('@slack/bolt');
+const { App } = require('@slack/bolt');
 const { registerListeners } = require('./listeners');
 const html = require('./templates');
 
@@ -61,6 +61,6 @@ app.message('hello', async ({ message, say }) => {
   (async () => {
     // Start your app
     await app.start();
-  
+
     console.log('⚡️ Bolt app is running!');
   })();
