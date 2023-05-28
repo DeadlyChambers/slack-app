@@ -1,13 +1,18 @@
 {
   "name": "slack-app",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Slack app that will return scripts and help with devops stuff",
   "main": "app.js",
+  "licenses": [
+    {
+      "type": "SEE LICENSE IN LICENSE"
+    }
+  ],
   "scripts": {
     "test": "testing",
     "start": "node app.js",
-    "local": "yarn version patch && yarn start",
-    "prepublish": "yarn version patch"
+    "local": "yarn version --patch && yarn start",
+    "prepublish": "yarn version --patch"
   },
   "repository": {
     "type": "git",
@@ -28,7 +33,10 @@
     "@ngrok/ngrok": "^0.5.1",
     "@slack/bolt": "^3.13.1",
     "dotenv": "^16.0.3",
+    "form-data": "^4.0.0",
+    "http": "^0.0.1-security",
     "inquirer": "^9.2.6",
+    "request": "^2.88.2",
     "semver": "^7.5.1"
   },
   "devDependencies": {
