@@ -1,5 +1,4 @@
 require('dotenv').config();
-var pjson = require('./package.json').version;
 
 const commandCheckVersion = async ({ ack, client, body, respond }) => {
   try {
@@ -20,7 +19,7 @@ const commandCheckVersion = async ({ ack, client, body, respond }) => {
           type: 'section',
           text: {
             type: 'mrkdwn',
-            text: `Current Version\n\n:sparkles: ${pjson}`,
+            text: `Current Version\n\n:sparkles: ${process.env.npm_package_version}`,
           },
         },
       ],

@@ -6,9 +6,8 @@
   "scripts": {
     "test": "testing",
     "start": "node app.js",
-    "prepublish": "npm version patch && npm publish",
-    "local": "npm version patch && npm run start",
-    "lint": "eslint --ext .js ."
+    "local": "yarn version patch && yarn start",
+    "prepublish": "yarn version patch"
   },
   "repository": {
     "type": "git",
